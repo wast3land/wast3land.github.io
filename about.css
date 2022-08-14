@@ -1,0 +1,20 @@
+#about{
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+}
+
+#about-title{
+    background: linear-gradient(to right, rgba(200, 200, 200, 0.6), rgba(200, 200, 200, 0.4)), url("fact-def.jpg") center top no-repeat;
+    /* line-height: 276px; */
+}
+
+#fact-def{
+    background: linear-gradient(to right, rgba(200, 200, 200, 0.6), rgba(200, 200, 200, 0.4)), url("cheese-press.png") center top no-repeat;
+    width: 850px;
+    height: 450px;
+}
