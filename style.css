@@ -4,6 +4,7 @@
 html, body {
     margin:0;
     padding:0; 
+    overflow-x: hidden;
 }
 
 .header {
@@ -48,7 +49,7 @@ html, body {
 
 .logo{
     padding: 5px;
-    margin-right:auto;
+    margin-right:20%;
     margin-left: 5%;
     display: flex;
     justify-content: center;
@@ -57,7 +58,7 @@ html, body {
 }
 .logo a{
     /* color:black; */
-    color:white;
+    color:black;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -94,6 +95,10 @@ html, body {
     height: 10%;
 }
 
+.bg-image{
+    max-width: 100%;
+    height: auto;
+}
 
 /* 
 #header .logo h1 a,
@@ -119,6 +124,7 @@ html, body {
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    text-decoration: none;
 }
   
 .navbar ul {
@@ -132,6 +138,7 @@ html, body {
 .navbar li {
     position: relative;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .navbar a,
@@ -140,20 +147,22 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-size: 14px;
+    font-size: 20px;
     /* color: #7797a8; */
     color: white;
     white-space: nowrap;
     transition: 0.3s;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .navbar a i,
 .navbar a:focus i {
-    font-size: 12px;
+    font-size: 20px;
     line-height: 0;
     margin-left: 5px;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .navbar a:hover,
@@ -162,20 +171,60 @@ html, body {
 .navbar li:hover>a {
     font-family: 'Poppins', sans-serif;
     /* color: rgb(29, 53, 78); */
-    color:red
+    text-decoration: underline;
 
 }
 
+.hero-bg-01{
+    position: absolute;
+    top:0px;
+    left:0px;
+    overflow: hidden;
+    display: flex;
+    width: 35%;
+    height: 50vh;
+    display: block;
+    background-color: rgb(230, 235, 248);
+    transform: skew(-5deg);
+}
+
+.hero-bg-02{
+    position: absolute;
+    top:0px;
+    left:0px;
+    overflow: hidden;
+    display: flex;
+    width: 10%;
+    height: 50vh;
+    display: block;
+    background-color: rgb(230, 235, 248);
+}
+
+.hero-bg-03{
+    position: absolute;
+    top:0px;
+    left:35%;
+    overflow: hidden;
+    display: flex;
+    width: 75%;
+    height: 50vh;
+    display: block;
+    background-color: rgb(45, 60, 105);
+    transform: skew(-5deg);
+}
+
+
+
+
 .reform-some-facts{
-    width: 100%;
+    max-width: 100%;
     margin-right: auto;
-    height: 100vh;
-    overflow-x: hidden;
+    height:70vh;
+    /* overflow-x: hidden; */
     align-items: center;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("openbook.jpg") center top no-repeat;
-    border-radius: 0 0 25% 25%;
+    /* background: url("openbook.jpg") center top no-repeat; */
 }
 
 .unreformed-facts{
@@ -283,7 +332,7 @@ html, body {
   }
   
     span {
-      transform: skewX(15deg) 
+      /* transform: skewX(15deg)  */
     }
   
     span:nth-child(2) {
