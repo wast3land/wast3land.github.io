@@ -5,6 +5,7 @@ html, body {
     margin:0;
     padding:0; 
     overflow-x: hidden;
+    width: 100%;
 }
 
 .header {
@@ -16,16 +17,18 @@ html, body {
     top: 0px;
     left: 0px;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     position:absolute;
-    /* color: rgb(32, 37, 44); */
-    text-align: center;
-    white-space: nowrap;
+    margin: 0 auto;
+    padding: 25px 0;
     /* box-shadow: 0px 5px 40px rgb(96, 98, 100); */
 }
 
 .header-container{
-    height: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
+    height: 40px;
+    display: flex;
 }
 
 /*   
@@ -48,13 +51,11 @@ html, body {
 }
 
 .logo{
-    padding: 5px;
-    margin-right:20%;
-    margin-left: 5%;
     display: flex;
+    width: 350px;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-    flex-direction: column;
+
 }
 .logo a{
     /* color:black; */
@@ -69,7 +70,7 @@ html, body {
 .title{
     padding: 5px;
     font-size: 35px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     color: white;
     text-transform: uppercase;
     margin-left: 10%
@@ -120,12 +121,13 @@ html, body {
 
 
 .navbar {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
     text-decoration: none;
+    width: 500px;
 }
   
 .navbar ul {
@@ -138,7 +140,7 @@ html, body {
 
 .navbar li {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     text-decoration: none;
 }
 
@@ -153,7 +155,7 @@ html, body {
     color: white;
     white-space: nowrap;
     transition: 0.3s;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     text-decoration: none;
 }
 
@@ -162,7 +164,7 @@ html, body {
     font-size: 20px;
     line-height: 0;
     margin-left: 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     text-decoration: none;
 }
 
@@ -170,7 +172,7 @@ html, body {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bank Gothic', sans-serif;
     /* color: rgb(29, 53, 78); */
     text-decoration: underline;
 
@@ -185,7 +187,7 @@ html, body {
     width: 35%;
     height: 50vh;
     display: block;
-    background-color: rgb(230, 235, 248);
+    background-color: #d1dde9;
     transform: skew(-5deg);
 }
 
@@ -198,7 +200,7 @@ html, body {
     width: 10%;
     height: 50vh;
     display: block;
-    background-color: rgb(230, 235, 248);
+    background-color: #d1dde9;
 }
 
 .hero-bg-03{
@@ -210,7 +212,7 @@ html, body {
     width: 75%;
     height: 50vh;
     display: block;
-    background-color: rgb(45, 60, 105);
+    background-color: #0c223d;
     transform: skew(-5deg);
 }
 
@@ -237,26 +239,32 @@ html, body {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    overflow-y: hidden;
 }
 
 .news-feed-wrapper{
-    border: 1px solid;
+    /* border: 1px solid; */
     width: 180%;
     height: 90vh;
     margin-top: 5%;
+    display: flex;
 }
 
 .news-card{
     display: block;
-    position: absolute;
-    width: 45%;
-    height: 40%;
+    width: 25%;
+    height: 60%;
     margin: 5%;
-    border: 1px solid;
+    box-shadow: 1px 1px 3px grey;
 }
 
-.news-card .hover{
-    background-color: red;
+.news-card:hover{
+    box-shadow: 1px 1px 10px red;
+}
+
+.news-thumbnail{
+    max-width:100%;
+    height: 100%;
 }
 
 #hero{
@@ -324,7 +332,7 @@ html, body {
       display: flex;
       padding: 10px 45px;
       text-decoration: none;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Bank Gothic', sans-serif;
       font-size: 40px;
       color: white;
       background: #e62525;
