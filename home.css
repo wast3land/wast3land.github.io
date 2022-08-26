@@ -2,5 +2,14 @@
     position:absolute; 
     top:0px; 
     left:0px;
-    color:black
+    color:#394758
+}
+
+.navbar a,
+.navbar a:focus {
+    color:white;
+}
+
+#news-container{
+    align-items: center;
 }

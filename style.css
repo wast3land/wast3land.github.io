@@ -6,18 +6,18 @@ html, body {
     padding:0; 
     overflow-x: hidden;
     width: 100%;
+    background-color:#fafbff;
 }
 
 .header {
     transition: all 0.5s;
     z-index: 1001;
     transition: all 0.5s;
-    color: white;
     width: 100%;
     top: 0px;
     left: 0px;
     font-size: 16px;
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     position:absolute;
     margin: 0 auto;
     padding: 25px 0;
@@ -70,10 +70,12 @@ html, body {
 .title{
     padding: 5px;
     font-size: 35px;
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     color: white;
     text-transform: uppercase;
-    margin-left: 10%
+    margin-left: 10%;
+    color: #394758;
+
 }
 
 
@@ -92,7 +94,7 @@ html, body {
 
 .underline{
     background: url(underline.png) center top no-repeat;
-    width: 45%;
+    width: 15%;
     height: 2px;
     background-color: red;
 }
@@ -121,7 +123,7 @@ html, body {
 
 
 .navbar {
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +142,7 @@ html, body {
 
 .navbar li {
     position: relative;
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     text-decoration: none;
 }
 
@@ -151,11 +153,10 @@ html, body {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-size: 20px;
-    /* color: #7797a8; */
-    color: white;
+    /* color: white; */
     white-space: nowrap;
     transition: 0.3s;
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     text-decoration: none;
 }
 
@@ -164,7 +165,7 @@ html, body {
     font-size: 20px;
     line-height: 0;
     margin-left: 5px;
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     text-decoration: none;
 }
 
@@ -172,7 +173,7 @@ html, body {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    font-family: 'Bank Gothic', sans-serif;
+    font-family: 'UPBOLTERS', sans-serif;
     /* color: rgb(29, 53, 78); */
     text-decoration: underline;
 
@@ -233,27 +234,24 @@ html, body {
 .container{
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 90%;
     overflow-x: hidden;
-    align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 2%;
-    overflow-y: hidden;
+    flex-direction: column;
 }
 
 .news-feed-wrapper{
-    /* border: 1px solid; */
-    width: 180%;
-    height: 90vh;
-    margin-top: 5%;
+    width: 100%;
+    height: 100%;
     display: flex;
 }
 
 .news-card{
     display: block;
-    width: 25%;
-    height: 60%;
+    width: 40%;
+    height: 550px;
     margin: 5%;
     box-shadow: 1px 1px 3px grey;
 }
@@ -304,21 +302,6 @@ html, body {
 } */
 
 
-
-/*UNREFORMED FACTS STUFF*/
-
-
-
-
-.news{
-    border: 4px double;
-    color: red;
-    width: 100%;
-    height: 75%;
-
-}
-
-
 /*CSS STUFF FOR BUTTON*/
 
 
@@ -332,7 +315,7 @@ html, body {
       display: flex;
       padding: 10px 45px;
       text-decoration: none;
-      font-family: 'Bank Gothic', sans-serif;
+      font-family: 'UPBOLTERS', sans-serif;
       font-size: 40px;
       color: white;
       background: #e62525;

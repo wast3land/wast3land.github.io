@@ -8,13 +8,34 @@
     display: flex;
 }
 
-#about-title{
-    background: linear-gradient(to right, rgba(200, 200, 200, 0.6), rgba(200, 200, 200, 0.4)), url("fact-def.jpg") center top no-repeat;
-    /* line-height: 276px; */
+.navbar a,
+.navbar a:focus {
+    color:#0c223d;
 }
 
-#fact-def{
-    background: linear-gradient(to right, rgba(200, 200, 200, 0.6), rgba(200, 200, 200, 0.4)), url("cheese-press.png") center top no-repeat;
-    width: 850px;
-    height: 450px;
+.header{
+    box-shadow: 0px 3px 10px grey;
+}
+
+#about-title{
+    position: fixed;
+    font-size: 45px;
+}
+
+.title ::before{
+    content: "about";
+    font-size: 30px;
+    color: grey;
+    position: absolute;
+    bottom: 60px;
+    opacity: 50%;
+}
+
+.title-img{
+    width: 900px;
+    height: 300px;
+    position: fixed;
+    margin-left: 20%;
+    background-image: url("cheese-press.png");
+    background-repeat: no-repeat;
 }
