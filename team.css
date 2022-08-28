@@ -1,0 +1,39 @@
+.navbar a,
+.navbar a:focus {
+    color:#0c223d;
+}
+
+.header{
+    box-shadow: 0px 3px 10px grey;
+}
+
+.member-tab{
+    border: 1px solid;
+    width: 33.33333%;
+    height: 730px;
+    opacity: .6;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.member-name{
+    opacity: 1.0;
+    font-size: 150px;
+    transition: all .5s;
+}
+
+.member-blurb{
+    position: absolute;
+    opacity: 0.0;
+    transition: all .5s;
+}
+
+#team-container{
+    display: flex;
+    height: fit-content;
+    margin-top:90px;
+
+}
