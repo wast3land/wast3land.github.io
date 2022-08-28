@@ -2,7 +2,8 @@
     position:absolute; 
     top:0px; 
     left:0px;
-    color:#394758
+    color:#394758;
+    margin-top:5%;
 }
 
 .navbar a,
@@ -12,4 +13,9 @@
 
 #news-container{
     align-items: center;
+    height: fit-content;
+}
+
+#news-feed-wrapper-container{
+    margin-top: 5px;
 }
