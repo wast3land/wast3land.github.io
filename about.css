@@ -1,11 +1,8 @@
-#about{
-    width: 100%;
+
+#about-container{
+    display:block;
     height: 90vh;
-    align-items: center;
-    justify-content: center;
-    margin-top: 120px;
-    position: relative;
-    display: flex;
+    top: 200px;
 }
 
 .navbar a,
@@ -18,8 +15,11 @@
 }
 
 #about-title{
-    position: fixed;
     font-size: 45px;
+    position: absolute;
+    top:110px;
+    left: 10%;
+    margin-left: 0;
 }
 
 .title ::before{
@@ -34,8 +34,55 @@
 .title-img{
     width: 900px;
     height: 300px;
-    position: fixed;
-    margin-left: 20%;
-    background-image: url("cheese-press.png");
+    left: 20%;
     background-repeat: no-repeat;
+    position: absolute;
+}
+
+#comments-container{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.comment-box{
+    max-width: 20%;
+    width: fit-content;
+    position: relative;
+    margin-left: 2.5%;
+    margin-right:2.5%;
+    overflow-y:hidden;
+    height: fit-content;
+    max-height: 486px;
+}
+
+.quote-mark-box{
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: red;
+    font-size: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    left: 15%;
+}
+
+.comment-text{
+    font-family: 'UPBOLTERS', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    /* left: 20%; */
+    text-align: center;
+    color: #415165;
+    line-height: 28pt;
+    white-space: normal;
+}
+
+.comment-attribution{
+    color: red;
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'UPBOLTERS', sans-serif;
 }
