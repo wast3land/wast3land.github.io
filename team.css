@@ -9,7 +9,7 @@
 
 .member-tab{
     width: 33.33333%;
-    height: 730px;
+    height: 720px;
     opacity: .6;
     text-align: center;
     display: flex;
@@ -34,6 +34,6 @@
 #team-container{
     display: flex;
     height: fit-content;
-    margin-top:90px;
+    margin-top:100px;
 
 }
