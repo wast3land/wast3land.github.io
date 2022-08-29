@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
 
+@font-face {
+    font-family: "Pink Sans 100";
+    src: url(PinkSans-100.ttf);
+}
+
 
 html, body {
     margin:0;
@@ -16,11 +21,12 @@ html, body {
     width: 100%;
     top: 0px;
     left: 0px;
-    font-size: 16px;
-    font-family: 'UPBOLTERS', sans-serif;
+    font-size: 25px;
+    font-family: 'Pink Sans 100', sans-serif;
     position:absolute;
     margin: 0 auto;
     padding: 25px 0;
+    height: 12%;
     /* box-shadow: 0px 5px 40px rgb(96, 98, 100); */
 }
 
@@ -51,12 +57,16 @@ html, body {
 }
 
 .logo{
-    display: flex;
-    width: 350px;
-    align-items: center;
-    justify-content: center;
-
+    display: block;
+    width: 100%;
+    max-width: 195px;
+    height: auto;
+    margin-right: 15%;
+    position: absolute;
+    top: 2%;
+    left: 13%;
 }
+
 .logo a{
     /* color:black; */
     color:black;
@@ -69,8 +79,8 @@ html, body {
 
 .title{
     padding: 5px;
-    font-size: 35px;
-    font-family: 'UPBOLTERS', sans-serif;
+    font-size: 45px;
+    font-family: 'Pink Sans 100', sans-serif;
     color: white;
     text-transform: uppercase;
     margin-left: 10%;
@@ -104,32 +114,23 @@ html, body {
     height: auto;
 }
 
-/* 
-#header .logo h1 a,
-#header .logo h1 a:hover {
-    color: black(255,255,255,1.0);
-    text-decoration: none;
-} */
-
 #header .logo img {
     padding: 0;
     margin: 0;
     max-height: 40px;
 }
-/* 
-#main {
-    margin-top: 80px;
-} */
-
 
 .navbar {
-    font-family: 'UPBOLTERS', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-decoration: none;
     width: 500px;
+    margin-top: 5px;
+    position: absolute;
+    left: 36%;
+    top: 0;
 }
   
 .navbar ul {
@@ -142,7 +143,6 @@ html, body {
 
 .navbar li {
     position: relative;
-    font-family: 'UPBOLTERS', sans-serif;
     text-decoration: none;
 }
 
@@ -152,20 +152,16 @@ html, body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-size: 20px;
     /* color: white; */
     white-space: nowrap;
     transition: 0.3s;
-    font-family: 'UPBOLTERS', sans-serif;
     text-decoration: none;
 }
 
 .navbar a i,
 .navbar a:focus i {
-    font-size: 20px;
     line-height: 0;
     margin-left: 5px;
-    font-family: 'UPBOLTERS', sans-serif;
     text-decoration: none;
 }
 
@@ -173,8 +169,6 @@ html, body {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    font-family: 'UPBOLTERS', sans-serif;
-    /* color: rgb(29, 53, 78); */
     text-decoration: underline;
 
 }
@@ -319,7 +313,7 @@ html, body {
       display: flex;
       padding: 10px 45px;
       text-decoration: none;
-      font-family: 'UPBOLTERS', sans-serif;
+      font-family: 'Pink Sans 100', sans-serif;
       font-size: 40px;
       color: white;
       background: #e62525;
