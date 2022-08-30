@@ -18,15 +18,17 @@ html, body {
     transition: all 0.5s;
     z-index: 1001;
     transition: all 0.5s;
-    width: 100%;
+    width: 1440px;
     top: 0px;
     left: 0px;
     font-size: 25px;
     font-family: 'Pink Sans 100', sans-serif;
+    letter-spacing: 2px;
     position:absolute;
     margin: 0 auto;
     padding: 25px 0;
     height: 6%;
+    -webkit-font-smoothing: antialiased;
     /* box-shadow: 0px 5px 40px rgb(96, 98, 100); */
 }
 
@@ -50,6 +52,7 @@ html, body {
 .text{
     font-size: 1.25rem;
     color:black;
+    -webkit-font-smoothing: antialiased;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     text-align: left;
     position: absolute;
@@ -78,6 +81,8 @@ html, body {
 }
 
 .title{
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
     padding: 5px;
     font-size: 45px;
     font-family: 'Pink Sans 100', sans-serif;
@@ -126,7 +131,7 @@ html, body {
     align-items: center;
     flex-direction: column;
     text-decoration: none;
-    width: 500px;
+    width: 40%;
     margin-top: 5px;
     position: absolute;
     left: 36%;
@@ -179,8 +184,8 @@ html, body {
     left:0px;
     overflow: hidden;
     display: flex;
-    width: 30%;
-    height: 60vh;
+    min-width: 432px;
+    min-height: 510px;
     display: block;
     background-color: #d1dde9;
     transform: skew(-5deg);
@@ -192,8 +197,8 @@ html, body {
     left:0px;
     overflow: hidden;
     display: flex;
-    width: 10%;
-    height: 60vh;
+    min-width: 144px;
+    min-height: 510px;
     display: block;
     background-color: #d1dde9;
 }
@@ -201,11 +206,11 @@ html, body {
 .hero-bg-03{
     position: absolute;
     top:0px;
-    left:30%;
+    left:432px;
     overflow: hidden;
     display: flex;
-    width: 75%;
-    height: 60vh;
+    min-width: 1080px;
+    min-height: 510px;
     display: block;
     background-color: #0c223d;
     transform: skew(-5deg);
@@ -215,7 +220,7 @@ html, body {
 .reform-some-facts{
     max-width: 100%;
     margin-right: auto;
-    height:50vh;
+    height:510px;
     /* overflow-x: hidden; */
     align-items: center;
     display: flex;
@@ -226,12 +231,13 @@ html, body {
 
 .container{
     position: relative;
-    width: 100%;
+    width: 1440px;
     height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    min-height: auto;
 }
 
 .news-feed-wrapper{
@@ -265,7 +271,7 @@ html, body {
 
 #hero{
     width: 100%;
-    height: 90vh;
+    height: 90%;
     overflow-x: hidden;
     align-items: center;
     display: flex;

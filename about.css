@@ -1,7 +1,7 @@
 
 #about-container{
     display:block;
-    height: 90vh;
+    height: 810px;
     top: 200px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 #comments-container{
-    height: 60vh;
+    height: 60%;
     display: flex;
     flex-direction: row;
     justify-content: left;
