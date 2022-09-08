@@ -90,6 +90,7 @@ html, body {
     text-transform: uppercase;
     margin-left: 10%;
     color: #394758;
+    font-weight: bold;
 }
 
 
@@ -189,6 +190,17 @@ html, body {
     display: block;
     background-color: #d1dde9;
     transform: skew(-5deg);
+    animation: slideInLeft 2s ease-in-out;
+    z-index: 2;
+}
+
+@keyframes slideInLeft {
+    from{
+        transform: translateX(-100%) skew(-5deg);
+    }
+    to{
+        transform: translateX(0%) skew(-5deg);
+    }
 }
 
 .hero-bg-02{
@@ -206,15 +218,18 @@ html, body {
 .hero-bg-03{
     position: absolute;
     top:0px;
-    left:432px;
+    left:120px;
     overflow: hidden;
     display: flex;
-    min-width: 1080px;
+    min-width: 2000px;
     min-height: 510px;
     display: block;
     background-color: #0c223d;
     transform: skew(-5deg);
+    z-index: 0;
+    /* animation: slideOutRight 1s ease-in-out; */
 }
+
 
 
 .reform-some-facts{
