@@ -1,31 +1,7 @@
-@media only screen and (max-width: 1440px){
-    html, body {
-        margin:0;
-        padding:0; 
-        overflow-x: hidden;
-        overflow-y: hidden;
-        min-width: 1440px;
-        min-height: 900px;
-        width: 100%;
-        height: 100%;
-        background-color:#f7f8f9;
-    }
-}
 
-@media only screen and (max-width: 1920px){
-    html, body {
-        margin:0;
-        padding:0; 
-        overflow-x: hidden;
-        overflow-y: hidden;
-        min-width: 1920px;
-        min-height: 1080px;
-        width: 100%;
-        height: 100%;
-        background-color:#f7f8f9;
-    }
+body{
+    overflow-y: hidden;
 }
-
 .navbar a,
 .navbar a:focus {
     color:#0c223d;
@@ -57,11 +33,14 @@
     opacity: 0.0;
     transition: all .5s;
     font-size: 40px;
+    max-width: 33.333%;
+    width: fit-content;
 }
 
 #team-container{
     display: flex;
-    height: 90%;
+    height: 100%;
     margin-top:100px;
-    overflow-y:none;
+    min-width: 1440px;
+    width: 100%;
 }

@@ -5,29 +5,15 @@
     src: url(PinkSans-100.ttf);
 }
 
-@media only screen and (max-width: 1440px){
-    html, body {
-        margin:0;
-        padding:0; 
-        overflow-x: hidden;
-        min-width: 1440px;
-        min-height: 900px;
-        width: 100%;
-        background-color:#f7f8f9;
-    }
+
+html, body{
+    margin: 0;
+    padding: 0;
+    min-height: 900px;
+    height: 100%;
 }
 
-@media only screen and (max-width: 1920px){
-    html, body {
-        margin:0;
-        padding:0; 
-        overflow-x: hidden;
-        min-width: 1920px;
-        min-height: 1080px;
-        width: 100%;
-        background-color:#f7f8f9;
-    }
-}
+
 
 
 .header {
@@ -41,7 +27,8 @@
     position: absolute;
     margin: 0 auto;
     /* padding: 25px 0; */
-    min-width: 100%;
+    min-width: 1440px;
+    width: 100%;
     -webkit-font-smoothing: antialiased;
     height:100px;
 }
@@ -194,48 +181,49 @@
     display: block;
     background-color: #d1dde9;
     transform: skew(-5deg);
+    animation: slideInRight 1s ease-in-out;
 }
 
 .hero-bg-02{
     position: absolute;
     top:0px;
-    left:0px;
+    left:-10%;
     overflow: hidden;
     display: flex;
-    min-width: 1%;
+    min-width: 15%;
     min-height: 510px;
     display: block;
     background-color: #d1dde9;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .hero-bg-03{
     position: absolute;
     top:0px;
-    left:30%;
+    left:10%;
     overflow: hidden;
     display: flex;
-    min-width: 75%;
+    min-width: 100%;
     min-height: 510px;
     display: block;
     background-color: #0c223d;
     transform: skew(-5deg);
+    z-index: -1;
 }
 
-
-.reform-some-facts{
-    max-width: 100%;
-    margin-right: auto;
-    height:510px;
-    /* overflow-x: hidden; */
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    overflow:hidden
-    /* background: url("openbook.jpg") center top no-repeat; */
+@keyframes slideInRight {
+    from{
+        transform: skew(-5deg) translateX(-60%);
+    }
+    to{
+        transform: skew(-5deg) translateX(0%);
+    }
 }
+
 
 .container{
     position: relative;
+    min-width: 1440px;
     width: 100%;
     height: auto;
     overflow: hidden;

@@ -19,3 +19,17 @@
 #news-feed-wrapper-container{
     margin-top: 5px;
 }
+
+
+.reform-some-facts{
+    min-width: 1440px;
+    width: 100%;
+    margin-right: auto;
+    height:510px;
+    /* overflow-x: hidden; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow:hidden
+    /* background: url("openbook.jpg") center top no-repeat; */
+}

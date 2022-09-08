@@ -13,3 +13,12 @@ Array.from(document.getElementsByClassName('member-tab')).forEach(tab =>{
         tab.children[1].style.opacity = 0.0
     })
 })
+
+
+const member_tab_height = window.outerHeight - 100
+
+console.log(window.innerHeight, member_tab_height)
+
+Array.from(document.getElementsByClassName('member-tab')).forEach(tab =>{
+    tab.style.height = member_tab_height + "px"
+})
