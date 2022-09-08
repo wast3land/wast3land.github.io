@@ -5,49 +5,54 @@
     src: url(PinkSans-100.ttf);
 }
 
-
-html, body {
-    margin:0;
-    padding:0; 
-    overflow-x: hidden;
-    width: 100%;
-    background-color:#f7f8f9;
+@media only screen and (max-width: 1440px){
+    html, body {
+        margin:0;
+        padding:0; 
+        overflow-x: hidden;
+        min-width: 1440px;
+        min-height: 900px;
+        width: 100%;
+        background-color:#f7f8f9;
+    }
 }
+
+@media only screen and (max-width: 1920px){
+    html, body {
+        margin:0;
+        padding:0; 
+        overflow-x: hidden;
+        min-width: 1920px;
+        min-height: 1080px;
+        width: 100%;
+        background-color:#f7f8f9;
+    }
+}
+
 
 .header {
     transition: all 0.5s;
     z-index: 1001;
-    transition: all 0.5s;
-    width: 1440px;
     top: 0px;
     left: 0px;
     font-size: 25px;
     font-family: 'Pink Sans 100', sans-serif;
     letter-spacing: 2px;
-    position:absolute;
+    position: absolute;
     margin: 0 auto;
-    padding: 25px 0;
-    height: 6%;
+    /* padding: 25px 0; */
+    min-width: 100%;
     -webkit-font-smoothing: antialiased;
-    /* box-shadow: 0px 5px 40px rgb(96, 98, 100); */
+    height:100px;
 }
 
 .header-container{
     margin: 0 auto;
     max-width: 1140px;
-    height: 40px;
+    /* height: 40px; */
     display: flex;
 }
 
-/*   
-#header.header-transparent {
-    background: none;
-} */
-
-/* #header.header-scrolled {
-    background: rgba(30, 67, 86, 0.8);
-    height: 60px;
-} */
 
 .text{
     font-size: 1.25rem;
@@ -90,7 +95,6 @@ html, body {
     text-transform: uppercase;
     margin-left: 10%;
     color: #394758;
-    font-weight: bold;
 }
 
 
@@ -185,22 +189,11 @@ html, body {
     left:0px;
     overflow: hidden;
     display: flex;
-    min-width: 432px;
+    min-width: 30%;
     min-height: 510px;
     display: block;
     background-color: #d1dde9;
     transform: skew(-5deg);
-    animation: slideInLeft 2s ease-in-out;
-    z-index: 2;
-}
-
-@keyframes slideInLeft {
-    from{
-        transform: translateX(-100%) skew(-5deg);
-    }
-    to{
-        transform: translateX(0%) skew(-5deg);
-    }
 }
 
 .hero-bg-02{
@@ -209,7 +202,7 @@ html, body {
     left:0px;
     overflow: hidden;
     display: flex;
-    min-width: 144px;
+    min-width: 1%;
     min-height: 510px;
     display: block;
     background-color: #d1dde9;
@@ -218,18 +211,15 @@ html, body {
 .hero-bg-03{
     position: absolute;
     top:0px;
-    left:120px;
+    left:30%;
     overflow: hidden;
     display: flex;
-    min-width: 2000px;
+    min-width: 75%;
     min-height: 510px;
     display: block;
     background-color: #0c223d;
     transform: skew(-5deg);
-    z-index: 0;
-    /* animation: slideOutRight 1s ease-in-out; */
 }
-
 
 
 .reform-some-facts{
@@ -246,7 +236,7 @@ html, body {
 
 .container{
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -412,4 +402,3 @@ html, body {
           fill: white;
       }
   }
-
